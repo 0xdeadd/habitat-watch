@@ -325,7 +325,9 @@ const css = `
   }
   .hw a { color: var(--accent); }
   .hw-wrap { max-width: 760px; margin: 0 auto; padding: 16px 16px 48px; }
-  .hw-header { padding: 20px 0 8px; }
+  .hw-header { padding: 12px 0 8px; }
+  .hw-hero { border-radius: var(--radius); overflow: hidden; margin: 0 0 14px; border: 1px solid var(--line); background: #cfc9bb; aspect-ratio: 16 / 9; }
+  .hw-hero img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .hw-header h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.01em; }
   .hw-header p { margin: 0; color: var(--muted); font-size: 0.95rem; }
   .hw-tabs {
@@ -445,6 +447,9 @@ export default function HabitatWatch() {
       <style>{css}</style>
       <div className="hw-wrap">
         <header className="hw-header">
+          <div className="hw-hero">
+            <img src="/hero.webp" alt="A family of gray squirrels wearing backpacks walks away from a cleared lot and a windowless data center, toward a creek and the last stand of oaks." width="1600" height="900" />
+          </div>
           <h1>Habitat Watch</h1>
           <p>Concrete local steps to protect wildlife when a data center is proposed in your county.</p>
         </header>
